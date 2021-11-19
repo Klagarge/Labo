@@ -1,0 +1,379 @@
+{
+    // Utilisez IntelliSense pour en savoir plus sur les attributs possibles.
+    // Pointez pour afficher la description des attributs existants.
+    // Pour plus d'informations, visitez : https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch RectangleDemoBegin",
+            "request": "launch",
+            "mainClass": "POO.T0_introduction.RectangleDemoBegin",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch dickClock",
+            "request": "launch",
+            "mainClass": "dumpThings.dickClock",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Fuel",
+            "request": "launch",
+            "mainClass": "lab1.Fuel",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch MyProgram",
+            "request": "launch",
+            "mainClass": "lab1.MyProgram",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch RoomCalc",
+            "request": "launch",
+            "mainClass": "lab1.RoomCalc",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch sphere",
+            "request": "launch",
+            "mainClass": "lab1.sphere",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch swap",
+            "request": "launch",
+            "mainClass": "lab1.swap",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Task1",
+            "request": "launch",
+            "mainClass": "lab2.Task1",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch task2",
+            "request": "launch",
+            "mainClass": "lab2.task2",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch task3",
+            "request": "launch",
+            "mainClass": "lab2.task3",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch task4",
+            "request": "launch",
+            "mainClass": "lab2.task4",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch task5",
+            "request": "launch",
+            "mainClass": "lab2.task5",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch task6",
+            "request": "launch",
+            "mainClass": "lab2.task6",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch task7",
+            "request": "launch",
+            "mainClass": "lab2.task7",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch task8",
+            "request": "launch",
+            "mainClass": "lab2.task8",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch DrawArrow",
+            "request": "launch",
+            "mainClass": "lab3.DrawArrow",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch SimpleCalculator",
+            "request": "launch",
+            "mainClass": "lab3.SimpleCalculator",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch task1",
+            "request": "launch",
+            "mainClass": "lab3.task1",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch task4(1)",
+            "request": "launch",
+            "mainClass": "lab3.task4",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch task5(1)",
+            "request": "launch",
+            "mainClass": "lab3.task5",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch task6(1)",
+            "request": "launch",
+            "mainClass": "lab3.task6",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch task7(1)",
+            "request": "launch",
+            "mainClass": "lab3.task7",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch DottedFlag",
+            "request": "launch",
+            "mainClass": "lab4.DottedFlag",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch task1(1)",
+            "request": "launch",
+            "mainClass": "lab4.task1",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch task2(1)",
+            "request": "launch",
+            "mainClass": "lab4.task2",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch task3(1)",
+            "request": "launch",
+            "mainClass": "lab4.task3",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch secretNumber",
+            "request": "launch",
+            "mainClass": "lab5.secretNumber",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch HangMan",
+            "request": "launch",
+            "mainClass": "lab6.HangMan",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Task1(1)",
+            "request": "launch",
+            "mainClass": "lab6.Task1",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch C05EX01a",
+            "request": "launch",
+            "mainClass": "series.C05S03_loops.C05EX01a",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch C05EX01b",
+            "request": "launch",
+            "mainClass": "series.C05S03_loops.C05EX01b",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch C05EX02",
+            "request": "launch",
+            "mainClass": "series.C05S03_loops.C05EX02",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch C05EX03",
+            "request": "launch",
+            "mainClass": "series.C05S03_loops.C05EX03",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch C05EX04a",
+            "request": "launch",
+            "mainClass": "series.C05S03_loops.C05EX04a",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch C05EX04c",
+            "request": "launch",
+            "mainClass": "series.C05S03_loops.C05EX04c",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch C05EX04d",
+            "request": "launch",
+            "mainClass": "series.C05S03_loops.C05EX04d",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch C05EX07",
+            "request": "launch",
+            "mainClass": "series.C05S03_loops.C05EX07",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch C05EX08a",
+            "request": "launch",
+            "mainClass": "series.C05S03_loops.C05EX08a",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch C05EX08b",
+            "request": "launch",
+            "mainClass": "series.C05S03_loops.C05EX08b",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch C05EX08c",
+            "request": "launch",
+            "mainClass": "series.C05S03_loops.C05EX08c",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch C05EX08d",
+            "request": "launch",
+            "mainClass": "series.C05S03_loops.C05EX08d",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch C05EX08e",
+            "request": "launch",
+            "mainClass": "series.C05S03_loops.C05EX08e",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch C05EX08f",
+            "request": "launch",
+            "mainClass": "series.C05S03_loops.C05EX08f",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch C05EX01",
+            "request": "launch",
+            "mainClass": "series.C06S04_fonctions.C05EX01",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch C04EX0501",
+            "request": "launch",
+            "mainClass": "series.theorie.C04EX0501",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch C04EX0502",
+            "request": "launch",
+            "mainClass": "series.theorie.C04EX0502",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch C05EX01a(1)",
+            "request": "launch",
+            "mainClass": "series.theorie.C05EX01a",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch C05EX01b(1)",
+            "request": "launch",
+            "mainClass": "series.theorie.C05EX01b",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch C05EX02(1)",
+            "request": "launch",
+            "mainClass": "series.theorie.C05EX02",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch C06EX06",
+            "request": "launch",
+            "mainClass": "series.theorie.C06EX06",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch L02tests",
+            "request": "launch",
+            "mainClass": "various_tests.L02tests",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch random",
+            "request": "launch",
+            "mainClass": "various_tests.random",
+            "projectName": "Labo_6a2f7ad1"
+        }
+    ]
+}

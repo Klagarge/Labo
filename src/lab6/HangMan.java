@@ -77,6 +77,28 @@ public class HangMan {
         }
 
     }
+            
+    public static void main(String[] args) {
+        HangMan hang = new HangMan();
+        hang.loadList("C:/Users/remi/OneDrive/Documents/Cours/05-HEVS/S1fb/informatic/labo/vscode/Labo/src/lab6/french_common_words.csv");
+        while (true) {
+            hang.word.askSecretWord();
+            hang.current_step = 0;
+            hang.updateGraphicsView();
+            while (hang.play() && !hang.word.isWordComplete()) {
+                System.out.println(hang.word.userWord);
+            }
+            // System.out.print ("Do you want play another party ? (y/n) ");
+            // char answer = Input.readChar();
+            char answer = Dialogs.getChar("Do you want play another party ? (y/n) ");
+            if (answer != 'y' && answer != 'Y') {
+                // System.out.println("Ok, see you later.");
+                Dialogs.displayMessage("Ok, see you later.");
+                System.exit(1);
+            }
+        }
+
+    }
 
     public String[] loadList(String filePath) {
         String[] wordList;
@@ -95,27 +117,6 @@ public class HangMan {
           e.printStackTrace();
           return null;
         }
-    }
-            
-    public static void main(String[] args) {
-        HangMan hang = new HangMan();
-        while (true) {
-            hang.word.askSecretWord();
-            hang.current_step = 0;
-            hang.updateGraphicsView();
-            while (hang.play() && !hang.word.isWordComplete()) {
-                System.out.println(hang.word.userWord);
-            }
-            // System.out.print ("Do you want play another party ? (y/n) ");
-            // char answer = Input.readChar();
-            char answer = Dialogs.getChar("Do you want play another party ? (y/n) ");
-            if (answer != 'y' && answer != 'Y') {
-                // System.out.println("Ok, see you later.");
-                Dialogs.displayMessage("Ok, see you later.");
-                System.exit(1);
-            }
-        }
-
     }
 }
 
