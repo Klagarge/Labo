@@ -18,6 +18,7 @@ public class Person {
     }
 
     void display(){
+        String s = "";
         System.out.print(name);
         System.out.print(" ");
         System.out.print(surname);
