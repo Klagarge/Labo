@@ -120,3 +120,4 @@ public class HangMan {
 }
 
 // comentaire pour le fun
+// commentaire pour un test
