@@ -95,3 +95,5 @@ public class HangMan {
         
     }
 }
+
+//comentaire pour le fun
