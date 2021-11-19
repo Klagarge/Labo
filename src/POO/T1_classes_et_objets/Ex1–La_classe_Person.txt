@@ -1,0 +1,16 @@
+Objectifs
+    Créer une classe
+    Tester la classe
+Enoncé du problème
+    Nous souhaitons créer une classe devant représenter une personne. Une personne possède les attributs suivants :
+        Nom
+        Prénom
+        Âge
+        Taille
+
+Travail à faire
+    Créer la classe Person avec les attributs nécessaires
+    Dans une autre classe qui contiendra votre main :
+        Instanciez une première personne de 19 ans, nommée "John Doe", mesurant 1.75 m
+        Instanciez une second personne de 122 ans, nommée "Mathusalem", dont la taille est de 1.20 m
+    Vérifiez que tout fonctionne bien avec ces deux objets. Notamment, essayez d’imprimer le nom des personnes lorsque vous les aurez instanciées.

@@ -1,0 +1,12 @@
+Objectif
+    Ajouter plusieurs constructeurs à une classe existante
+    Tester une classe avec son constructeur
+    Constater l’existance de null
+Enoncé du problème
+    Ajoutez deux constructe urs à la class Person définie auparavant.
+        1. Le premier permettant de définir tous les attributs en une fois.
+        2. Un second constructeur ne prenant que le prénom comme argument. Ce constructeur doit appeler le constructeur avec tous les arguments. Pour les String non définis, utilisez la constante null.
+Travail à faire
+    Complétez la classe Person selon les instructions ci-dessus.
+    Testez votre classe Person dans une autre classe qui contiendra le main.
+    Utilisez le constructeur à un argument pour instancier Mathusalem, qui n’a pas de prénom. Que se passe-t-il lorsque vous essayer d’appeler une méthode sur le prénom de votre objet, par exemple toUpperCase() qui est une méthode définie pour les String ?

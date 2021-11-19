@@ -1,0 +1,23 @@
+Objectifs
+    Créer une classe
+    Tester une classe
+    Tester les méthodes de classes existantes (avec la classe String)
+Enoncé du problème
+    On souhaite réaliser une classe pour modéliser une voiture. Pensez quels types d’attributs cette classe doit posséder, sachant
+        Un véhicule est caractérisé par sa couleur, son nom et sa vitesse maximale.
+        Un véhicule possède une méthode permettant de retourner sa représentation textuelle. Par exemple le code suivant :
+
+    Car c1 = new Car();
+    c1.color = "bleue";
+    c1.maxSpeed = 250;
+    c1.type = "Ford Raptor";
+    System.out.println(c1.getStringRepresentation());
+
+    doit afficher
+
+    Ford Raptor bleue, vitesse max : 250 km/h
+
+Travail à faire
+    Implémentez la classe Car selon les instructions ci-dessus.
+    Testez votre classe Car dans une autre classe qui contiendra le main.
+    Vérifiez que l’affichage est bien correct.

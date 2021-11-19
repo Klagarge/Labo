@@ -1,0 +1,19 @@
+Objectif
+    Ajouter un constructeur à une classe existante
+    Tester une classe avec son constructeur
+Enoncé du problème
+    1. Ajoutez à la classe Car définie auparavant un constructeur permettant d’instancier la voiture en une seule ligne de code, avec tous ses attributs comme ci-dessous.
+    2. Utilisez ce constructeur pour créer une instance de la classe.
+
+    Car c1 = new Car("Ford Raptor", "bleue", 250);
+    System.out.println(c1.getStringRepresentation());
+
+    doit afficher
+
+    Ford Raptor bleue, vitesse max : 250 km/h
+
+
+Travail à faire
+    Modifiez la classe Car selon les instructions ci-dessus.
+    Testez votre classe Car dans une autre classe qui contiendra le main.
+    Vérifiez que l’affichage est bien correct.
