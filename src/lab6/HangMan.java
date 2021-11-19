@@ -1,77 +1,100 @@
 package lab6;
+
 import hevs.graphics.FunGraphics;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.ArrayList;
+
+/*public String[] loadList(String filePath) {
+  String[] wordList;
+  try {
+    BufferedReader bf = new BufferedReader(new FileReader(filePath));
+    ArrayList < String > al = new ArrayList < String > ();
+    while (bf.ready()) {
+      String[] c = bf.readLine().split(";");
+      al.add(c[0]);
+    }
+    wordList = al.stream().toArray(String[]::new);
+    System.out.println("[Dictionary loaded with " + wordList.length + " words]");
+    bf.close();
+    return wordList;
+  } catch(Exception e) {
+    e.printStackTrace();
+    return null;
+  }
+}*/
 
 public class HangMan {
     final int MAX_STEPS = 8;
     final int scale = 2;
     int current_step = 0;
     WordManager word = new WordManager();
-    FunGraphics man = new FunGraphics(300*scale, 300*scale, 0, 0, "Hangman", true);
+    FunGraphics man = new FunGraphics(300 * scale, 300 * scale, 0, 0, "Hangman", true);
 
-    boolean play(){
+    boolean play() {
         boolean party = true;
-        //System.out.print("Please enter a new letter: ");
-        //char c = Input.readChar();
+        // System.out.print("Please enter a new letter: ");
+        // char c = Input.readChar();
         char c = Dialogs.getChar("Please enter a new letter");
         boolean validLetter = word.checkLetter(c);
-        if(!validLetter){
+        if (!validLetter) {
             current_step++;
         }
         updateGraphicsView();
         if (current_step >= MAX_STEPS) {
             party = false;
-            //System.out.println("Sorry, you have lost ;( ");
+            // System.out.println("Sorry, you have lost ;( ");
             Dialogs.displayMessage("Sorry, you have lost ;(");
 
         }
-        
+
         return party;
     }
 
-    void updateGraphicsView(){
+    void updateGraphicsView() {
         man.clear();
-        man.drawString(20*scale, 60*scale, "Word : " + word.userWord);
+        man.drawString(20 * scale, 60 * scale, "Word : " + word.userWord);
         for (int i = 1; i <= current_step; i++) {
             switch (i) { // dessin du pendu
-                case 1:
-                    man.drawLine(110*scale, 210*scale, 120*scale, 190*scale);
-                    man.drawLine(130*scale, 210*scale, 120*scale, 190*scale);
-                    break;
-                
-                case 2:
-                    man.drawLine(120*scale, 190*scale, 120*scale, 100*scale);
-                    break;
-                
-                case 3:
-                    man.drawLine(120*scale, 100*scale, 180*scale, 100*scale);
-                    break;
-    
-                case 4:
-                    man.drawLine(180*scale, 100*scale, 180*scale, 110*scale);
-                    break;
-    
-                case 5:
-                    man.drawCircle(170*scale, 110*scale, 20*scale);
-                    break;
-                
-                case 6:
-                    man.drawLine(180*scale, 130*scale, 180*scale, 170*scale);
-                    break;
-    
-                case 7:
-                    man.drawLine(180*scale, 170*scale, 170*scale, 190*scale);
-                    man.drawLine(180*scale, 170*scale, 190*scale, 190*scale);
-                    break;
-    
-                case 8:
-                    man.drawLine(170*scale, 150*scale, 190*scale, 150*scale);
-                    break;
-            
-                default:
-                    break;
+            case 1:
+                man.drawLine(110 * scale, 210 * scale, 120 * scale, 190 * scale);
+                man.drawLine(130 * scale, 210 * scale, 120 * scale, 190 * scale);
+                break;
+
+            case 2:
+                man.drawLine(120 * scale, 190 * scale, 120 * scale, 100 * scale);
+                break;
+
+            case 3:
+                man.drawLine(120 * scale, 100 * scale, 180 * scale, 100 * scale);
+                break;
+
+            case 4:
+                man.drawLine(180 * scale, 100 * scale, 180 * scale, 110 * scale);
+                break;
+
+            case 5:
+                man.drawCircle(170 * scale, 110 * scale, 20 * scale);
+                break;
+
+            case 6:
+                man.drawLine(180 * scale, 130 * scale, 180 * scale, 170 * scale);
+                break;
+
+            case 7:
+                man.drawLine(180 * scale, 170 * scale, 170 * scale, 190 * scale);
+                man.drawLine(180 * scale, 170 * scale, 190 * scale, 190 * scale);
+                break;
+
+            case 8:
+                man.drawLine(170 * scale, 150 * scale, 190 * scale, 150 * scale);
+                break;
+
+            default:
+                break;
             }
         }
-        
+
     }
 
     public static void main(String[] args) {
@@ -83,17 +106,17 @@ public class HangMan {
             while (hang.play() && !hang.word.isWordComplete()) {
                 System.out.println(hang.word.userWord);
             }
-            //System.out.print ("Do you want play another party ? (y/n) ");
-            //char answer = Input.readChar();
+            // System.out.print ("Do you want play another party ? (y/n) ");
+            // char answer = Input.readChar();
             char answer = Dialogs.getChar("Do you want play another party ? (y/n) ");
             if (answer != 'y' && answer != 'Y') {
-                //System.out.println("Ok, see you later.");
+                // System.out.println("Ok, see you later.");
                 Dialogs.displayMessage("Ok, see you later.");
                 System.exit(1);
             }
         }
-        
+
     }
 }
 
-//comentaire pour le fun
+// comentaire pour le fun
