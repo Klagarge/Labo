@@ -5,25 +5,6 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
 
-/*public String[] loadList(String filePath) {
-  String[] wordList;
-  try {
-    BufferedReader bf = new BufferedReader(new FileReader(filePath));
-    ArrayList < String > al = new ArrayList < String > ();
-    while (bf.ready()) {
-      String[] c = bf.readLine().split(";");
-      al.add(c[0]);
-    }
-    wordList = al.stream().toArray(String[]::new);
-    System.out.println("[Dictionary loaded with " + wordList.length + " words]");
-    bf.close();
-    return wordList;
-  } catch(Exception e) {
-    e.printStackTrace();
-    return null;
-  }
-}*/
-
 public class HangMan {
     final int MAX_STEPS = 8;
     final int scale = 2;
