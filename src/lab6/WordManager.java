@@ -61,11 +61,12 @@ public class WordManager {
         int nbrLettreMin = 4;
         int nbrLettreMax = 12;
         String s = "";
-        String[] word = loadList("C:/Users/remi/OneDrive/Documents/Cours/05-HEVS/S1fb/informatic/labo/vscode/Labo/src/lab6/french_common_words.csv");
+        //String[] word = loadList("C:/Users/remi/OneDrive/Documents/Cours/05-HEVS/S1fb/informatic/labo/vscode/Labo/src/lab6/french_common_words.csv");
+        String[] word = loadList("C:/Users/remi/OneDrive/Documents/Cours/05-HEVS/S1fb/informatic/labo/vscode/Labo/src/lab6/french_dictionary.txt");
 
         switch (level) {
             case 'e':
-                nbrLettreMin = 4;
+                nbrLettreMin = 0;
                 nbrLettreMax = 6;                
                 break;
 
@@ -76,7 +77,7 @@ public class WordManager {
                 
             case 'd':
                 nbrLettreMin = 10;
-                nbrLettreMax = 12;
+                nbrLettreMax = Integer.MAX_VALUE;
                 break;
 
             default:
@@ -84,7 +85,7 @@ public class WordManager {
         }
         int lg;
         do {
-            int nbr = (int)(Math.random()*600);
+            int nbr = (int)(Math.random()*200000);
             s = word[nbr];
             lg = s.length();
         } while (lg < nbrLettreMin || lg > nbrLettreMax);
