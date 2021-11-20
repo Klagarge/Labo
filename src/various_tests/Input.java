@@ -1,5 +1,9 @@
 package various_tests;
 import java.io.*;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
+import java.nio.charset.spi.CharsetProvider;
+import java.util.Scanner;
 
 /** 
 * The Class Input is here to enter data with the keyboard.<br>
@@ -20,9 +24,15 @@ public class Input
 	*/
 	public static String readString()
 	{
-		BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
+		 // VERSION PROF
+		BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in, StandardCharsets.UTF_16));
 		try {return stdin.readLine(); }
 		catch (Exception ex) { return "";}
+		
+		/* // VERSION PERSO
+		Scanner scanner = new Scanner(System.in);
+		return scanner.nextLine();
+		*/
 	}
 
 	/** 

@@ -373,7 +373,8 @@
             "name": "Launch random",
             "request": "launch",
             "mainClass": "various_tests.random",
-            "projectName": "Labo_6a2f7ad1"
+            "projectName": "Labo_6a2f7ad1",
+            "encoding":"UTF-8"
         }
     ]
 }

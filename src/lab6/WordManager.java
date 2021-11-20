@@ -7,7 +7,7 @@ public class WordManager {
 
     void askSecretWord(){
         //System.out.print("Enter your secret word: ");
-        //String s = Input.readString();
+        //secretWord = Input.readString();
         secretWord = Dialogs.getHiddenString("Enter your secret word: ");
         secretWord = stripAccents(secretWord);
         secretWord = secretWord.toLowerCase();
