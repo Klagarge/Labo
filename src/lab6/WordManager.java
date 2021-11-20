@@ -11,7 +11,8 @@ public class WordManager {
     void askSecretWord(){
         //System.out.print("Enter your secret word: ");
         //secretWord = Input.readString();
-        secretWord = Dialogs.getHiddenString("Enter your secret word: ");
+        //secretWord = Dialogs.getHiddenString("Enter your secret word: ");
+        secretWord = randomWord();
         secretWord = stripAccents(secretWord);
         secretWord = secretWord.toLowerCase();
         userWord = "";
@@ -51,8 +52,43 @@ public class WordManager {
     }
 
     private String randomWord() {
-        loadList("C:/Users/remi/OneDrive/Documents/Cours/05-HEVS/S1fb/informatic/labo/vscode/Labo/src/lab6/french_common_words.csv");
+        String askLevel = "";
+        askLevel += "Please choose your level \n";
+        askLevel += "('e' for easy) \n";
+        askLevel += "('m' for medium) \n";
+        askLevel += "('d' for difficult)";
+        char level = Dialogs.getChar(askLevel);
+        int nbrLettreMin = 4;
+        int nbrLettreMax = 12;
         String s = "";
+        String[] word = loadList("C:/Users/remi/OneDrive/Documents/Cours/05-HEVS/S1fb/informatic/labo/vscode/Labo/src/lab6/french_common_words.csv");
+
+        switch (level) {
+            case 'e':
+                nbrLettreMin = 4;
+                nbrLettreMax = 6;                
+                break;
+
+            case 'm':
+                nbrLettreMin = 7;
+                nbrLettreMax = 9;
+                break;
+                
+            case 'd':
+                nbrLettreMin = 10;
+                nbrLettreMax = 12;
+                break;
+
+            default:
+                break;
+        }
+        int lg;
+        do {
+            int nbr = (int)(Math.random()*600);
+            s = word[nbr];
+            lg = s.length();
+        } while (lg < nbrLettreMin || lg > nbrLettreMax);
+        System.out.println(s);
         return s;
     }
 
