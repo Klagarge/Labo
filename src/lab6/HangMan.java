@@ -22,7 +22,7 @@ public class HangMan {
         if (current_step >= MAX_STEPS) {
             party = false;
             // System.out.println("Sorry, you have lost ;( ");
-            Dialogs.displayMessage("Sorry, you have lost ;(");
+            word.lost("Sorry, you have lost ;(");
 
         }
 

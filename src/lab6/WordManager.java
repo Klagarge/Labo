@@ -45,6 +45,13 @@ public class WordManager {
 
     }
 
+    void lost(String msg){
+        String s = msg;
+        s += "\n \n The good word was: ";
+        s += secretWord;
+        Dialogs.displayMessage(s);
+    }
+
     public static String stripAccents(String s){
         s = Normalizer.normalize(s, Normalizer.Form.NFD);
         s = s.replaceAll("[\\p{InCombiningDiacriticalMarks}]", "");
