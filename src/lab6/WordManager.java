@@ -73,18 +73,18 @@ public class WordManager {
 
         switch (level) {
             case 'e':
-                nbrLettreMin = 0;
-                nbrLettreMax = 6;                
+                nbrLettreMin = 4;
+                nbrLettreMax = 8;    //5            
                 break;
 
             case 'm':
-                nbrLettreMin = 7;
-                nbrLettreMax = 9;
+                nbrLettreMin = 9;
+                nbrLettreMax = 16; //8
                 break;
                 
             case 'd':
-                nbrLettreMin = 10;
-                nbrLettreMax = Integer.MAX_VALUE;
+                nbrLettreMin = 16; //9
+                nbrLettreMax = 25;
                 break;
 
             default:
