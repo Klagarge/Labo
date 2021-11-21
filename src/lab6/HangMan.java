@@ -95,6 +95,9 @@ public class HangMan {
         HangMan hang = new HangMan();
         while (true) {
             hang.word.askSecretWord();
+            hang.inputLetter = "Inputed letter: ";
+            hang.inputLetter1 = "";
+            hang.inputLetter2 = "";
             hang.current_step = 0;
             hang.updateGraphicsView();
             while (hang.play() && !hang.word.isWordComplete()) {
