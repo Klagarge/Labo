@@ -66,15 +66,15 @@ public class WordManager {
         askLevel += "('d' for difficult)";
         char level = Dialogs.getChar(askLevel);
         int nbrLettreMin = 4;
-        int nbrLettreMax = 12;
+        int nbrLettreMax = Integer.MAX_VALUE;
         String s = "";
         //String[] word = loadList("C:/Users/remi/OneDrive/Documents/Cours/05-HEVS/S1fb/informatic/labo/vscode/Labo/src/lab6/french_common_words.csv");
-        String[] word = loadList("C:/Users/remi/OneDrive/Documents/Cours/05-HEVS/S1fb/informatic/labo/vscode/Labo/src/lab6/french_dictionary.txt");
+        String[] word = loadList("C:/Users/remi/OneDrive/Documents/Cours/05-HEVS/S1fb/informatic/labo/vscode/Labo/src/lab6/mots.csv"); // 331'782 mots
 
         switch (level) {
             case 'e':
                 nbrLettreMin = 4;
-                nbrLettreMax = 8;    //5            
+                nbrLettreMax = 8; //5            
                 break;
 
             case 'm':
@@ -84,7 +84,7 @@ public class WordManager {
                 
             case 'd':
                 nbrLettreMin = 16; //9
-                nbrLettreMax = 25;
+                nbrLettreMax = Integer.MAX_VALUE;
                 break;
 
             default:
@@ -92,7 +92,7 @@ public class WordManager {
         }
         int lg;
         do {
-            int nbr = (int)(Math.random()*200000);
+            int nbr = (int)(Math.random()*word.length);
             s = word[nbr];
             lg = s.length();
         } while (lg < nbrLettreMin || lg > nbrLettreMax);
