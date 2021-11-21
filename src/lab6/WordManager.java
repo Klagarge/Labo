@@ -47,7 +47,7 @@ public class WordManager {
 
     void lost(String msg){
         String s = msg;
-        s += "\n \n The good word was: ";
+        s += "\n\nThe good word was: ";
         s += secretWord;
         Dialogs.displayMessage(s);
     }

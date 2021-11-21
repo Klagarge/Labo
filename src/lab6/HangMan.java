@@ -1,11 +1,16 @@
 package lab6;
 
+import java.awt.Color;
+
 import hevs.graphics.FunGraphics;
 
 public class HangMan {
     final int MAX_STEPS = 8;
     final int scale = 2;
     int current_step = 0;
+    String inputLetter = "Inputed letter: ";
+    String inputLetter1 = "";
+    String inputLetter2 = "";
     WordManager word = new WordManager();
     FunGraphics man = new FunGraphics(300 * scale, 300 * scale, 0, 0, "Hangman", true);
 
@@ -14,6 +19,15 @@ public class HangMan {
         // System.out.print("Please enter a new letter: ");
         // char c = Input.readChar();
         char c = Dialogs.getChar("Please enter a new letter");
+        inputLetter += c + " ";
+
+        if (inputLetter.length()<=50) {
+            inputLetter1 = inputLetter.substring(0, inputLetter.length());
+        } else {
+            inputLetter1 = inputLetter.substring(0, 50);
+            inputLetter2 = "                    " + inputLetter.substring(51, inputLetter.length());
+        }
+
         boolean validLetter = word.checkLetter(c);
         if (!validLetter) {
             current_step++;
@@ -31,7 +45,9 @@ public class HangMan {
 
     void updateGraphicsView() {
         man.clear();
-        man.drawString(20 * scale, 60 * scale, "Word : " + word.userWord);
+        man.drawString(20 * scale, 60 * scale, "Word : " + word.userWord, Color.DARK_GRAY, 20*scale);
+        man.drawString(20*scale, 260*scale, inputLetter1, Color.DARK_GRAY, 10*scale);
+        man.drawString(20*scale, 270*scale, inputLetter2, Color.DARK_GRAY, 10*scale);
         for (int i = 1; i <= current_step; i++) {
             switch (i) { // dessin du pendu
             case 1:
@@ -86,7 +102,7 @@ public class HangMan {
             }
             // System.out.print ("Do you want play another party ? (y/n) ");
             // char answer = Input.readChar();
-            char answer = Dialogs.getChar("Do you want play another party ? (y/n) ");
+            char answer = Dialogs.getChar("Do you want to play another party ? (y/n) ");
             if (answer != 'y' && answer != 'Y') {
                 // System.out.println("Ok, see you later.");
                 Dialogs.displayMessage("Ok, see you later.");
