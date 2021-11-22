@@ -4,7 +4,13 @@
     // Pour plus d'informations, visitez : https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "POO.T5_autoboxing_des_types_primitifs.Main",
+            "projectName": "Labo_6a2f7ad1"
+        },
         {
             "type": "java",
             "name": "Launch Current File",
@@ -374,7 +380,7 @@
             "request": "launch",
             "mainClass": "various_tests.random",
             "projectName": "Labo_6a2f7ad1",
-            "encoding":"UTF-8"
+            "encoding": "UTF-8"
         }
     ]
 }
