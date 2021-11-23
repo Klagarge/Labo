@@ -2,8 +2,8 @@ package POO.T5_autoboxing_des_types_primitifs;
 
 public class Main {
     public static void main(String[] args) {
-        Integer foo = new Integer(15);
-        System.out.println(foo.toHexString(foo.intValue()));
+        //Integer foo = new Integer(15);
+        //System.out.println(foo.toHexString(foo.intValue()));
         String s = "12";
         System.out.println(Integer.parseInt(s)+5);
         int bar = 17;

@@ -1,9 +1,9 @@
 package various_tests;
 import java.io.*;
-import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
-import java.nio.charset.spi.CharsetProvider;
-import java.util.Scanner;
+//import java.nio.charset.spi.CharsetProvider;
+//import java.util.Scanner;
+//import java.nio.charset.Charset;
 
 /** 
 * The Class Input is here to enter data with the keyboard.<br>
