@@ -1,6 +1,6 @@
 package various_tests;
 
-// import hevs.utils.Input;
+import hevs.utils.Input;
 
 public class random {
 
