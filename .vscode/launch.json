@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Task1Runner",
+            "request": "launch",
+            "mainClass": "lab7_Classe_et_tableaux.Task1Runner",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
             "name": "Launch Main",
             "request": "launch",
             "mainClass": "POO.T5_autoboxing_des_types_primitifs.Main",
