@@ -18,7 +18,8 @@ public class Rectangle {
     }
 
     public String toString(){
-        String s = "Rectangle size : ";
+        String s = "";
+        s += "Rectangle size : ";
         s += this.width;
         s += " x ";
         s += this.height;
