@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch TheaterApplication",
+            "request": "launch",
+            "mainClass": "lab8_tableaux.TheaterApplication",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Task1",
+            "request": "launch",
+            "mainClass": "lab8_tableaux.Task1",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "lab8_tableaux.App",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
             "name": "Launch Task2Runner",
             "request": "launch",
             "mainClass": "lab7_Classe_et_tableaux.Task2Runner",
