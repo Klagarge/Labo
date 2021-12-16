@@ -63,6 +63,40 @@ public class Theater {
         return s;
     }
 
+    private String[] getContiguousSeats(int nbrOfSeat){
+        String[] contiguousSeats = new String[nbrOfSeat];
+        int contiguous =0 ;
+        int r = seats[0].length;
+        int c = seats.length;
+        for (int i = 0; i < r; i++) {
+            for (int j = 0; j < c; j++) {
+                contiguous = isSeatBusy(i, j) ? 0:contiguous+1;
+                if (contiguous >= nbrOfSeat) {
+                    for (int k = 1; k <= contiguous; k++) {
+                        occupySeat(i, (j-contiguous+k));
+                        contiguousSeats[k-1] = getSeat(i, (j-contiguous+k));
+                    }
+                    return contiguousSeats;
+                }
+            }
+        }
+        return null;
+    }
+
+    public String reserveSeat(int nbrOfSeat){
+        String s = "";
+        String[] reservedSeats = getContiguousSeats(nbrOfSeat);
+        if(reservedSeats != null){
+            s += "Got the contiguous seats : \n";
+            for(int i = 0; i < reservedSeats.length; i++){
+                s += "-" + reservedSeats[i] + "\n";
+            }
+        } else {
+            s += "Could not get contiguous seats";
+        }
+        return s;
+    }
+
     public String toString(){
         String s = "";
         s += "Theater seats occupation:";
