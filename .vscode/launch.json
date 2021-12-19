@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ImageProcessing",
+            "request": "launch",
+            "mainClass": "lab9_image_processing.ImageProcessing",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestArray",
+            "request": "launch",
+            "mainClass": "lab9_image_processing.TestArray",
+            "projectName": "Labo_6a2f7ad1"
+        },
+        {
+            "type": "java",
             "name": "Launch TheaterApplication",
             "request": "launch",
             "mainClass": "lab8_tableaux.TheaterApplication",
