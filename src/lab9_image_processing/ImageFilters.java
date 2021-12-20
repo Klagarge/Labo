@@ -16,8 +16,9 @@ public class ImageFilters {
 		/**
 		 * Write your code hereunder
 		 */
+		int[][] foo = a.clone();
 		
-		return null;				
+		return foo;				
 	}
 
 	/**
