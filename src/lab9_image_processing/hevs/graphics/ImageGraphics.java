@@ -227,6 +227,6 @@ public class ImageGraphics extends JFrame {
 	
 	public static void main(String args[]) {
 		final String imageUsed = "/images/lena.bmp";
-		ImageGraphics org = new ImageGraphics(imageUsed, "Original", 0, 0);			
+		new ImageGraphics(imageUsed, "Original", 0, 0);			
 	}
 }
